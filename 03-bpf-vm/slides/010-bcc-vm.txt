@@ -3,14 +3,11 @@ vcenter center
 % The BPF in-kernel Virtual Machine
 
 
-* Implements a general purpose low level RISC instructions
+* Implements a general purpose low level RISC instruction set.
 
 * Runs the instructions in response to events triggered by the kernel
 
-* Implements a verifier, so that your programs can't break the kernel
+* Implements a verifier, so that your programs can't break the kernel!
 
-* Has different interfaces for different types of programs
-
-* Widely supported in the kernel
-
-* Has an upstream LLVM backend, you can compile eBPF code with clang
+* Has an upstream LLVM backend, you can compile eBPF code with ~clang~.
+  Write BPF programs in C, which get compiled to bytecode for the VM.

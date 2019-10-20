@@ -3,8 +3,10 @@ center vcenter
 % Day Two:
 
 
-1. Traffic Control and XDP
+1. eBPF and Linux networking concepts
 
-2. Exercise: Stop a DOS attack with XDP
+2. Traffic Control and XDP
 
-3. Exercise: Uncover a service mesh / network namespace bug
+2. Exercise: trace flow through network namespaces
+
+3. Exercise: Stop a DOS attack with XDP
