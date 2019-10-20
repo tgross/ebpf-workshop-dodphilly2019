@@ -1,7 +1,7 @@
 center vcenter
 
 
-% Example application #1
+% Example application
 
 
 ┌────────────┐   ┌───────┬───────┐   ┌─────────────┐

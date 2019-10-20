@@ -2,21 +2,21 @@ vcenter center
 
 % MORE functions!!!
 
-│ function                    │ description                                     │
-├─────────────────────────────┼─────────────────────────────────────────────────┤
-│ print(@x[% int top          │ Print a map# with optional top entry count and  │
-│          [# int div]])      │ divisor                                         │
-│ clear(@x)                   │ Delete all key/values from a map                │
-│ sym(void *p)                │ Resolve kernel address                          │
-│ usym(void *p)               │ Resolve user space address                      │
-│ ntop([int af% ]             │ Resolve IP address                              │
-│       int|char[4|16] addr)  │                                                 │
-│ kaddr(char *name)           │ Resolve kernel symbol name                      │
-│ uaddr(char *name)           │ Resolve user space symbol name                  │
-│ reg(char *name)             │ Returns the value stored in the named register  │
-│ join(char *arr[]            │ Prints the string array                         │
-│      [% char *delim])       │                                                 │
-│ time(char *fmt)             │ Print the current time                          │
-│ cat(char *filename)         │ Print file content                              │
-│ system(char *fmt)           │ Execute shell command                           │
-│ exit()                      │ Quit bpftrace                                   │
+│ function                    │ description                             │
+├─────────────────────────────┼─────────────────────────────────────────┤
+│ print(@x[% int top          │ Print a map# with optional top entry    │
+│          [# int div]])      │   count and divisor                     │
+│ clear(@x)                   │ Delete all key/values from a map        │
+│ sym(void *p)                │ Resolve kernel address                  │
+│ usym(void *p)               │ Resolve user space address              │
+│ ntop([int af% ]             │ Resolve IP address                      │
+│       int|char[4|16] addr)  │                                         │
+│ kaddr(char *name)           │ Resolve kernel symbol name              │
+│ uaddr(char *name)           │ Resolve user space symbol name          │
+│ reg(char *name)             │ Returns the value in the named register │
+│ join(char *arr[]            │ Prints the string array                 │
+│      [% char *delim])       │                                         │
+│ time(char *fmt)             │ Print the current time                  │
+│ cat(char *filename)         │ Print file content                      │
+│ system(char *fmt)           │ Execute shell command                   │
+│ exit()                      │ Quit bpftrace                           │

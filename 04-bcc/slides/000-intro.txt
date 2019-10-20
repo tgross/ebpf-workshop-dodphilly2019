@@ -4,6 +4,9 @@ vcenter center
 
 
 * Toolkit to create and manipulate BPF programs
+
 * Connects BPF programs with high level programming languages
+
 * C++, Python, Lua, and Go frontends
+
 * Dynamic load and unload of BPF programs
