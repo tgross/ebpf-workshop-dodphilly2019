@@ -1,0 +1,12 @@
+center vcenter
+
+% BPF is a tool for building tools.
+
+
+* "Observability vendors" predominantly live at the aggregation and
+  visualization end. (Ex. NewRelic, DataDog, Honeycomb)
+
+* You'll still need a way to get low-level data ~out~ of the
+  application and operating system.
+
+* BPF is how modern tools for instrumentation are being built.

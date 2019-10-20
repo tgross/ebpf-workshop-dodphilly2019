@@ -1,0 +1,13 @@
+vcenter center
+
+BCC tools provides a collection of "ulib" with params for each language.
+
+~$ cat /sbin/pythongc-bpfcc
+
+~#!/bin/bash
+~lib=$(dirname $0)/lib
+~$lib/ugc -l python "$@"
+
+
+~Important:~ your runtime must be compiled with USDT support
+or this doesn't work! Check your distro defaults!

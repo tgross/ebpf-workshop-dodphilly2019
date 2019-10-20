@@ -1,0 +1,20 @@
+vcenter center
+
+~$ llvm-objdump -S -no-show-raw-insn hello_world_kern.o
+~
+~hello_world_kern.o:     file format ELF64-BPF
+~
+~Disassembly of section tracepoint/syscalls/sys_enter_execve:
+~0000000000000000 bpf_prog:
+~       0:       r1 = 33
+~       1:       *(u16 *)(r10 - 8) = r1
+~       2:       r1 = 7236284523806213712 ll
+~       4:       *(u64 *)(r10 - 16) = r1
+~       5:       r1 = 4764857262830019912 ll
+~       7:       *(u64 *)(r10 - 24) = r1
+~       8:       r1 = r10
+~       9:       r1 += -24
+~      10:       r2 = 18
+~      11:       call 6
+~      12:       r0 = 0
+~      13:       exit

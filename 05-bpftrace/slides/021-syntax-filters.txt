@@ -1,0 +1,7 @@
+vcenter center
+
+% Filters
+
+* ~/pid == 181/~        filter by process ID
+* ~/comm != "sshd"/~    filter by process command
+* ~/@ts[tid]/~          filter by thread in an array

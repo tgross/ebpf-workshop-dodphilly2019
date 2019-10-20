@@ -1,0 +1,12 @@
+vcenter center
+
+% tc queue disciplines
+
+
+Examples:
+
+  * ~pfifo_fast~: (default in Linux) FIFO with prioritization bands
+
+  * ~fq_codel~: Fair Queuing (FQ) with Controlled Delay (CoDel) Active Queue
+    Management. This is used to reduce bufferbloat by setting latency targets
+    on each queue.

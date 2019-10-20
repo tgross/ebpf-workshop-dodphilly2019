@@ -1,0 +1,15 @@
+vcenter center
+
+% Use cases for tc
+
+
+* Policy enforcement for containers: network traffic for containers
+  passes through veth pair in the network namespace, so a tc BPF program
+  can hook all ingress/egress traffic to it.
+
+* Forwarding and load-balancing: NAT traffic and direct east-west
+  traffic flows leaving a container (i.e. a service mess).
+
+* Flow sampling / monitoring: high performance monitoring at the lowest
+  level of the networking stack where we have bidirectional flows (and
+  without getting involved in hardware off-loading).

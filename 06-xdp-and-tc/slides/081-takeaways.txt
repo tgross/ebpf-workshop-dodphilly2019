@@ -1,0 +1,18 @@
+vcenter center
+
+% Takeaways: eBPF and Linux Networking
+
+
+Different tools operate at different levels of the stack:
+
+  * cBPF-style packet filtering
+
+  * Raw packet filtering (ex. ~BPF_PROG_TYPE_SOCKET_FILTER~)
+
+  * Traffic control (~tc~)
+
+  * eXpress Data Path (~XDP~)
+
+
+Cilium docs have a great reference:
+~https://docs.cilium.io/en/stable/bpf/#

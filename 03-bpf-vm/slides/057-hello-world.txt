@@ -1,0 +1,20 @@
+vcenter center
+
+% BPF Hello World (version 2)
+
+~#include <uapi/linux/bpf.h>
+~#define SEC(NAME) __attribute__((section(NAME), used))
+~#include "/src/linux-aws-5.0.0/tools/testing/selftests/bpf/bpf_helpers.h"
+
+~SEC("tracepoint/syscalls/sys_enter_execve")
+~int bpf_prog(void *ctx) {
+~  char msg[] = "Hello, BPF World!\n";
+~  bpf_trace_printk(msg, sizeof(msg));
+~  return 0;
+~}
+
+~char _license[] SEC("license") = "GPL";
+
+
+Thank you to:
+https://blog.raymond.burkholder.net/index.php?/archives/1000-eBPF-Basics.html

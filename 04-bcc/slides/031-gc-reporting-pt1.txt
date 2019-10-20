@@ -1,0 +1,19 @@
+vcenter center
+
+% USDT
+
+~USDT~: user statically-defined trace points are function hooks made for
+tracing in a native application or in a language runtime.
+
+BCC ships with out-of-the-box tools with support for Java, Node, Perl5,
+PHP, Python, Ruby, and TCL:
+
+* function calls
+
+* garbage collection
+
+* object instantiation
+
+* activity stats
+
+* thread creation / destruction

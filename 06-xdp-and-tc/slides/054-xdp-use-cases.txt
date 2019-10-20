@@ -1,0 +1,15 @@
+vcenter center
+
+% XDP use cases
+
+
+* DDoS mitigation, firewalling: use ~XDP_DROP~ to efficiently drop
+  packets with minimal overhead.
+
+* Forwarding and load balancing: mangle incoming packets to increase
+  headroom for encapsulation; hairpin (~XDP_TX~) or redirect to a
+  different NIC (~XDP_REDIRECT~).
+
+* Pre-stack filtering / processing: "harden" the networking stack by
+  using ~XDP_DROP~ to drop anything we don't expect to see (ex. this
+  box doesn't serve DNS so why accept UDP?)

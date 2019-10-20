@@ -1,0 +1,20 @@
+center vcenter
+
+
+% Example application #1
+
+
+┌────────────┐   ┌───────┬───────┐   ┌─────────────┐
+│   Client   ├──>│ Nginx ├> App  ├──>│  Memcached  │
+└────────────┘   └───────┴───────┘   └─────────────┘
+  (external)        (containers     (managed service)
+                  on same machine)
+
+
+% Symptoms:
+
+* Response latency is high at the client
+
+* Memcached is showing high CPU
+
+* Customers are sad!  =(

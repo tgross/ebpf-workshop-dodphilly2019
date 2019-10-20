@@ -1,0 +1,17 @@
+vcenter center
+
+Need to set up a ~ctypes~ data structure to parse the event data. This
+has to match the struct we created in C.
+
+~import ctypes as ct
+
+~TASK_COMM_LEN = 16    # linux/sched.h
+~
+~class Data(ct.Structure):
+~    _fields_ = [
+~        ("comm", ct.c_char * TASK_COMM_LEN)
+~    ]
+~
+~def dump_data(cpu, data, size):
+~    event = ct.cast(data, ct.POINTER(Data)).contents
+~    printb(b"%-16s" % event.comm)

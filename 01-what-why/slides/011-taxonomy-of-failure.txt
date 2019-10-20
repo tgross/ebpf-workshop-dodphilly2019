@@ -1,0 +1,22 @@
+center vcenter
+
+% Taxonomy of Failure
+
+                          Implicit
+                              │
+                              │
+      Wrong Answer            │     Segfault
+      Leaks Resources         │     Crash
+      Slow                    │     Type Error
+      Stops Doing Work        │     Unhandled Exception
+                              │
+                              │
+Non-Fatal ────────────────────┼─────────────────────── Fatal
+                              │
+                              │
+      Error message           │     Assert
+      Returns Error Code      │     Process aborts
+                              │     Exit with Error Code
+                              │
+                              │
+                          Explicit

@@ -1,0 +1,16 @@
+center vcenter
+
+* ~kernel space~: The part of memory owned by the operating system
+  kernel. Entering kernel space requires privileges; this stops
+  applications from writing into each other's memory.
+
+* ~user space~/~userland~: The part of memory owned by your applications.
+
+* ~syscall~: The way a user program calls into the kernel. This
+  ~interrupts~ the CPU to place it into privileged kernel mode, which
+  requires switching out the userland stack for the kernel stack.
+
+* ~context switch~: When the kernel scheduler decides your application
+  thread should give up some time on the CPU to other applications, or
+  other threads. This also switches out the kernel stacks and has to
+  restore a bunch of userland stuff as well.

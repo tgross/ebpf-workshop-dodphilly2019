@@ -1,0 +1,12 @@
+vcenter center
+
+Listing probes:
+
+~$ bpftrace -l | less
+~tracepoint:xfs:xfs_attr_list_sf
+~tracepoint:xfs:xfs_attr_list_sf_all
+~tracepoint:xfs:xfs_attr_list_leaf
+~tracepoint:xfs:xfs_attr_list_leaf_end
+~...
+~$ sudo bpftrace -l | wc -l
+~47958

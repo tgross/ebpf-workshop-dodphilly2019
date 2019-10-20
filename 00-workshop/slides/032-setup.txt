@@ -1,0 +1,12 @@
+center vcenter
+
+% ssh
+
+
+~https://login.machinistlabs.com
+
+~ssh~ key setup:
+
+  * Sign-in will fetch your ~ssh~ public key from GitHub
+  * Otherwise, provide a public key
+  * Will give you an IP address

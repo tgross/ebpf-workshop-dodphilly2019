@@ -1,0 +1,12 @@
+vcenter center
+
+% cBPF and packet filtering
+
+
+* Packet filtering is done using an accumulator on which filters are
+  applied, the classic BPF way.
+
+* Live capture is happening "late" in the network pipeline, or
+  even offline.
+
+* Ex. ~tcpdump~

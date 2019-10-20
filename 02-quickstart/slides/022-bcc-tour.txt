@@ -1,0 +1,16 @@
+vcenter center
+
+% BCC tools
+
+
+1.  ~execsnoop~             trace new process launches
+2.  ~opensnoop~             trace ~open()~ syscall
+3.  ~ext4slower~            trace slow filesystem calls
+4.  ~biolatency~            histogram of disk IO latency
+5.  ~biosnoop~              per-operation disk IO latency
+6.  ~cachestat~             file system cache stat summary
+7.  ~tcpconnect~            show each TCP ~connect()~ (outbound)
+8.  ~tcpaccept~             show each TCP ~accept()~ (inbound)
+9.  ~tcpretrans~            show each TCP retransmit
+10. ~runqlat~               histogram of run queue latency
+11. ~profile~               CPU profile

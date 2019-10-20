@@ -1,0 +1,10 @@
+center vcenter
+
+% Day Two:
+
+
+1. Traffic Control and XDP
+
+2. Exercise: Stop a DOS attack with XDP
+
+3. Exercise: Uncover a service mesh / network namespace bug

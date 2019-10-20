@@ -1,0 +1,23 @@
+center vcenter
+
+
+% eBPF workflow
+
+* ~bcc~ compiles eBPF program w/ ~LLVM~
+* ~bcc~ calls ~BPF_PROG_LOAD~ to hand off to the kernel
+* BPF bytecode VM in the kernel gets data via ~kprobe~s, etc.
+* kernel pre-aggregates data to reduce shuffling across to userland
+* ~bcc~ tool calls ~BPF_MAP_LOOKUP_ELEM~ to write data to buffer
+  shared between kernel and userland.
+* ~bcc~ tool reports aggregated data to user.
+
+
+               user space             |    kernel space
+                                      |
+                                      |
+bcc-tools ──> ~LLVM~ ──> eBPF program ────> BPF VM ──> kprobes
+     ^                                |                 |
+     │                                |                 V
+     │               ┌─────────────────────────────────────┐
+     └───────────────┤           shared buffer             │
+                     └─────────────────────────────────────┘

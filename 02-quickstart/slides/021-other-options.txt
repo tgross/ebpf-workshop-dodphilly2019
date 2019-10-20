@@ -1,0 +1,18 @@
+vcenter center
+
+% Without BPF
+
+
+1.  ~uptime~                load averages
+2.  ~dmesg | tail~          recent system messages
+3.  ~vmstat 1~              virtual memory stats
+4.  ~mpstat -P ALL 1~       per-CPU utilization
+5.  ~pidstat 1~             top w/ rolling summary
+6.  ~iostat -xz 1~          block disk activity
+7.  ~free -m~               memory (esp. buffers and cache)
+8.  ~sar -n DEV 1~          network iface throughput
+9.  ~sar -n TCP,ETCP 1~     network TCP metrics
+10. ~top~                   summary metrics
+
+ref ~Netflix: Linux Performance Analysis in 60s~
+    https://bit.ly/2ApDEC7

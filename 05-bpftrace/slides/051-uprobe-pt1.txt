@@ -1,0 +1,14 @@
+vcenter center
+
+% hands on: reading userspace returns
+
+Nomad is a Go program that orchestrates other applications. One of its
+functions is to collect metrics stats from those applications. Suppose
+we get a user report that we're dropping memory stats under load. We
+have a hypothesis that collection is taking too long, so we want to
+trace the timing.
+
+Let's get the path to the function to hook. We look in the source and
+find ~collectMemoryStats~. Let's check that path:
+
+  ~$ objdump -t $(which nomad)  | grep collectMemoryStats

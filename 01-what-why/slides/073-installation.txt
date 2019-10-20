@@ -1,0 +1,18 @@
+center vcenter
+
+% Installing BPF Tools
+
+
+* ~bcc-tools~ and ~bftrace~ require kernel headers specific to the
+  kernel version. Shipping as a container means you have to mount
+  kernel headers from target host.
+
+* Most Linux distros have a kernel headers metapackage you can keep up
+  to date with the host's kernel.
+
+* My recommendation: ship tools on the host and make it part of the
+  CI/CD pipeline with Packer for your AMI or other machine
+  image. YMMV.
+
+* Installing software is ~boring~ so all tools in this workshop are
+  already installed.

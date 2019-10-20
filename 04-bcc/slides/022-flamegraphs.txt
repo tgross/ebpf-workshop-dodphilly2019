@@ -1,0 +1,15 @@
+vcenter center
+
+Generating flame graphs
+
+~sudo profile-bpfcc -p $PID -f 30 > /tmp/profile.out
+~
+~cd /opt/FlameGraph
+~flamegraph.pl /tmp/profile.out > /tmp/profile-graph.svg
+~scp workshop:/tmp/profile-graph.svg .
+~
+~# (open ./profile-graph.svg in a webbrowser)
+
+
+Ref:
+~https://github.com/brendangregg/FlameGraph~

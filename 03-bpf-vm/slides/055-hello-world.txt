@@ -1,0 +1,23 @@
+vcenter center
+
+Copy our loader program into a recent Linux source tree and compile it:
+
+~$ src=/src/linux-aws-5.0.0
+~$ cp loader.c $src/samples/bpf/
+~
+~# copy over a modified Makefile
+~$ cp Makefile-tools $src/samples/bpf/Makefile
+~$ cp hello_world_kern.1.o $src/samples/bpf/hello_world_kern.o
+~$ cd $src
+~$ make oldconfig
+~ ...
+~$ make headers_install
+~$ make samples/bpf/   ~ <- note the trailing slash!
+~ ...
+~$ cd samples/bpf/
+~
+~$ sudo ./loader
+~invalid relo for insn[11].code 0x85
+~bpf_load_program() err=22
+~last insn is not an exit or jmp
+~The kernel didn't load the BPF program

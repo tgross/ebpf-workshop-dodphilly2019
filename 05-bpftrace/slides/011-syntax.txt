@@ -1,0 +1,17 @@
+vcenter center
+
+% Syntax
+
+
+Like DTrace (and kind of like awk):
+
+~probe /predicate/ {action}
+
+
+Call from ~bpftrace~:
+
+~bpftrace -e 'k:do_nanosleep / pid > 100 / { @[comm]++ }'
+
+
+Ref:
+https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md

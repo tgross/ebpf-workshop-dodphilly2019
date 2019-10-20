@@ -1,0 +1,11 @@
+center vcenter
+
+% Implicit Non-Fatal Failure
+
+
+* Hardest problems to debug: the "unknown unknowns"
+
+* Often can't be replicated in local environment, especially
+  with distributed systems.
+
+* Requires ~in-vivo~ analysis.

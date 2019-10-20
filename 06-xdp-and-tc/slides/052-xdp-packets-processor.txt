@@ -1,0 +1,11 @@
+vcenter center
+
+% XDP packets processor
+
+* Framework for running BPF programs in the driver.
+
+* Lays out packets linearly into a single DMA'd page for BPF program.
+  Adds 256 bytes of headroom for BPF program to perform encapsulation.
+
+
+Ref ~https://workshop.bpf.sh/img/xdp-interaction-diagram.png

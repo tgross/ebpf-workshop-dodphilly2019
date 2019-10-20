@@ -1,0 +1,10 @@
+vcenter center
+
+It's aliiiiiive!
+
+~$ sudo ./loader
+~           <...>-9023  [001] .... 12448.981794: 0: Hello, BPF World!
+~           <...>-9024  [001] .... 12449.949680: 0: Hello, BPF World!
+~           <...>-9025  [001] .... 12453.203527: 0: Hello, BPF World!
+~           <...>-9026  [001] .... 12453.692674: 0: Hello, BPF World!
+~           <...>-9027  [001] .... 12458.455006: 0: Hello, BPF World!

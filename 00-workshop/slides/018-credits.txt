@@ -1,0 +1,15 @@
+center vcenter
+
+% Credits
+
+Alexei Starovoitov:
+* "BPF in LLVM and kernel" (~https://bit.ly/2Vvs5BM~)
+
+Jean-Tiare Le Bigot -
+* "Turn Any Syscall Into An Event" (~https://bit.ly/2pirMhp~)
+
+Lorenzo Fontana:
+* ~https://fntlnz.wtf/post/xdp-ip-iproute/
+
+Dale Hamel:
+* ~https://bpf.sh/usdt-report-doc

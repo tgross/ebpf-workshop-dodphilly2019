@@ -1,0 +1,27 @@
+vcenter center
+
+% XDP programs
+
+
+Program type is ~BPF_PROG_TYPE_XDP~
+
+Gets a ~xdp_buff~ instead of ~sk_buff~ (note how much smaller this
+struct is!):
+
+    ~struct xdp_buff {
+    ~    void *data;
+    ~    void *data_end;
+    ~    void *data_meta;
+    ~    void *data_hard_start;
+    ~    struct xdp_rxq_info *rxq;
+    ~};
+
+XDP program processes packets and returns "verdict":
+
+    ~enum xdp_action {
+    ~    XDP_ABORTED = 0,   ~// exception
+    ~    XDP_DROP,          ~// drop the packet
+    ~    XDP_PASS,          ~// allow the packet
+    ~    XDP_TX,            ~// forward the packet out the same NIC
+    ~    XDP_REDIRECT,      ~// forward to another NIC or CPU map
+    ~};

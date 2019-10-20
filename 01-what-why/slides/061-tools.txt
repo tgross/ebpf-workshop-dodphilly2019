@@ -1,0 +1,14 @@
+center vcenter
+
+% BCC and bpftrace
+
+
+~IO Visor~ project under the Linux Foundation
+
+~BCC~ (BPF Compiler Collection) is a toolkit for creating eBPF
+programs + a collection of many useful pre-written tools
+    ~https://github.com/iovisor/bcc~
+
+~bpftrace~ is a newer approach with a more DTrace-like usage,
+which can be built as a static binary. A bit unstable still.
+    ~https://github.com/iovisor/bpftrace~

@@ -1,0 +1,6 @@
+vcenter center
+
+% The BPF in-kernel Virtual Machine
+
+
+https://workshop.bpf.sh/img/bpf-vm-diagram.svg

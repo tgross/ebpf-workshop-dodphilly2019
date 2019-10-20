@@ -1,0 +1,11 @@
+center vcenter
+
+* ~LLVM~: A compiler toolchain. Used to compile C, C++, Objective C,
+  Julia, Swift, and Rust, among many others. Used to compile BPF
+  programs into BPF bytecode.
+
+* ~BPF_PROG_LOAD~: A syscall used to load a BPF program into the BPF
+  VM in the kernel.
+
+* ~BPF_MAP_LOOKUP_ELEM~: One of many syscalls used to get information
+  out of the BPF VM and into userland.

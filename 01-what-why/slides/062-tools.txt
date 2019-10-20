@@ -1,0 +1,14 @@
+center vcenter
+
+% Other projects
+
+
+~IO Visor~:
+
+  * golang bindings: ~https://github.com/iovisor/gobpf~
+  * fuzzer: ~https://github.com/iovisor/bpf-fuzzer~
+  * kubectl-trace: ~https://github.com/iovisor/kubectl-trace~
+
+~Sysdig~:
+
+  * Falco: ~https://falco.org/~

@@ -1,0 +1,9 @@
+vcenter center
+
+% Takeaways
+
+* ~bpftrace~ is a higher-level language for BPF tracing
+* Lots of premade tools!
+
+IOVisor bpftrace docs:
+~https://github.com/iovisor/bpftrace/tree/master/docs

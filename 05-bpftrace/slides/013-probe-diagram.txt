@@ -1,0 +1,6 @@
+vcenter center
+
+% bpftrace: Probes
+
+
+https://workshop.bpf.sh/img/probe.png

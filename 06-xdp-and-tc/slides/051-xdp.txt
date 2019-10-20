@@ -1,0 +1,19 @@
+vcenter center
+
+% eXpress Data Path (XDP)
+
+
+Runs BPF program at earliest possible point - as soon as the network
+driver receives the packet, before ~skbuff~ has been allocated.
+
+Because of this, operation modes are closely tied to network driver
+and hardware availability:
+
+  * ~Native~: driver supports XDP, code runs on driver receive path.
+              (Most of the time w/ good drivers and on the cloud.)
+
+  * ~Offloaded~: hardware supports XDP, so code is executed on NIC CPU.
+
+  * ~Generic~: mode for when driver/hardware support isn't there.
+
+Ingress only!

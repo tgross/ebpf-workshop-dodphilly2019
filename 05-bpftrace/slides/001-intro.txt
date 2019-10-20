@@ -1,0 +1,18 @@
+vcenter center
+
+% bpftrace: BPF observability front-end
+
+
+Awesome for SREs:
+
+* DTrace-like higher-level language for eBPF programs
+
+* Quick to write custom one-liners
+
+* Used in production at Netflix, Facebook, etc.
+
+* Just for tracing!
+
+
+Ref:
+https://github.com/iovisor/bpftrace

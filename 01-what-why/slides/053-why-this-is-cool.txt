@@ -1,0 +1,15 @@
+center vcenter
+
+% Why This is Cool
+
+
+* Zero disabled overhead; low enabled overhead
+
+* In-kernel aggregation for high quantity events
+
+* Allows instrumentation of a ~live~ system without crashing, hanging,
+  or affecting performance~*~
+
+
+
+                                                  ~* mostly

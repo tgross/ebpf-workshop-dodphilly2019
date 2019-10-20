@@ -1,0 +1,14 @@
+vcenter center
+
+% Map operations
+
+~bpf_map_lookup_elem~                 Lookup a single element value
+~bpf_map_delete_element~              Remove an element
+~bpf_map_update_elem~                 Updating an element
+~bpf_map_get_next_key~                Get the next key in the map
+~bpf_map_lookup_and_delete_element~   Single atomic operation
+
+
+                    * Concurrent access is regulated using a mechanism
+                      called ~bpf_spin_lock~ that is essentially a
+                      semaphore

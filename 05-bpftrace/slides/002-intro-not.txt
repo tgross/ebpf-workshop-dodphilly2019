@@ -1,0 +1,12 @@
+vcenter center
+
+% bpftrace: BPF observability front-end
+
+
+Limitations:
+
+* Not a framework for building loaders, unlike BCC.
+
+* Can't do classic BPF (seccomp or socket probes)
+
+* Not support for traffic control and XDP

@@ -1,0 +1,17 @@
+vcenter center
+
+% Actions
+
+Per-event output:
+
+~printf()~    formatted print
+~system()~    run a shell command
+~join()~      string concatentation
+~time()~      prints current time w/ "%H:%M:%S\n" formatting
+
+
+Map Summaries:
+
+~@var = count()~     store autoincrementing count in
+~~                   the map named "var"
+~@var = hist(val)~   store value in histogram named "var"

@@ -1,0 +1,15 @@
+vcenter center
+
+% tc loading
+
+
+
+The classifier program is added to the queue discipline with ~tc~:
+
+~tc qdisc add dev docker0 clsact
+~tc filter add \
+~    dev docker0 \    # our device
+~    ingress \
+~    bpf \
+~    da \             # "direct action" (no ext action modules)
+~    obj hello_tc.o~  # our program

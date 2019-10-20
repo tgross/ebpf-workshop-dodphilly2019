@@ -1,0 +1,11 @@
+center vcenter
+
+% Disclaimer
+
+
+We're going to talk about the operating system...
+
+
+                             ... Including little bit of kernel stuff.
+
+                             It's going to be ok, I promise.

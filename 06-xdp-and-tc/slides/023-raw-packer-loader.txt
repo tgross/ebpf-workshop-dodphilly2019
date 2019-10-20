@@ -1,0 +1,5 @@
+vcenter center
+
+Anyone want to go through building a custom loader in C again?
+
+I thought not.

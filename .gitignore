@@ -1,0 +1,11 @@
+# Misc
+.DS_Store
+.env
+
+# Environment setup
+.vagrant/
+.terraform/
+*.tfstate*
+
+# Outputs
+*.o

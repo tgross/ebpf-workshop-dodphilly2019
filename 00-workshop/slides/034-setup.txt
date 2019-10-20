@@ -1,0 +1,13 @@
+center vcenter
+
+% "I don't have a ssh key!"
+
+
+Linux, macOS, or Linux-on-Windows:
+
+    ~ssh-keygen -t rsa -b 4096 -C "your_email@example.com"~
+
+
+Windows with PuTTY:
+
+    ~https://do.co/1lDe8NZ~

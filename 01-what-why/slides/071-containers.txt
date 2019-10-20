@@ -1,0 +1,4 @@
+center vcenter
+
+And now, because this is a DevOps event
+we have to talk about containers...

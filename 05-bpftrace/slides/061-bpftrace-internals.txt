@@ -1,0 +1,6 @@
+vcenter center
+
+% bpftrace: Internals
+
+
+https://workshop.bpf.sh/img/bpftrace-internals.png

@@ -1,0 +1,8 @@
+center vcenter
+
+~# ./oomkill.py
+~Tracing oom_kill_process()... Ctrl-C to end.
+~21:03:39 Triggered by PID 3297 ("app"), OOM kill of PID 3297 ("app"),
+~    3850642 pages, loadavg: 0.99 0.39 0.30 3/282 22724
+~21:03:48 Triggered by PID 22517 ("app"), OOM kill of PID 22517 ("app"),
+~    3850642 pages, loadavg: 0.99 0.41 0.30 2/282 22932

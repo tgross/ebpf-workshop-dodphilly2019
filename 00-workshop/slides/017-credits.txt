@@ -1,0 +1,16 @@
+center vcenter
+
+% Credits
+
+David Calavera and Lorenzo Fontana:
+* ~https://github.com/bpftools/bpf-workshop
+* ~https://workshop.bpf.sh
+
+Cilium docs:
+* ~https://docs.cilium.io/en/stable/bpf/#
+
+Sysdig:
+* ~https://sysdig.com/blog/the-art-of-writing-ebpf-programs-a-primer/
+
+Raymond Burkholder
+* "eBPF Basics" (~https://bit.ly/2VECiMb~)

@@ -1,0 +1,14 @@
+vcenter center
+
+% bpftrace tools
+
+1. ~execsnoop~             trace new process launches
+2. ~opensnoop~             trace ~open()~ syscall
+3. ~biolatency~            histogram of disk IO latency
+4. ~biosnoop~              per-operation disk IO latency
+5. ~tcpconnect~            show each TCP ~connect()~ (outbound)
+6. ~tcpaccept~             show each TCP ~accept()~ (inbound)
+7. ~tcpretrans~            show each TCP retransmit
+8. ~runqlat~               histogram of run queue latency
+
+(look familiar?)

@@ -1,0 +1,9 @@
+vcenter center
+
+% One last bit...
+
+
+Add to your ~/etc/hosts~ to make later exercises
+with HTTPS easier:
+
+    ~54.xx.yy.zz  workshop.machinistlabs.com

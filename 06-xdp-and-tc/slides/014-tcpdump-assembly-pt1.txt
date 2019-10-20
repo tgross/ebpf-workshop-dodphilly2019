@@ -1,0 +1,20 @@
+vcenter center
+
+% tcpdump packet filtering
+
+~tcpdump -d~ option shows the generated BPF assembly:
+
+~$ sudo tcpdump -d 'ip and udp port 53'
+~(000) ldh      [12]
+~(001) jeq      #0x800           jt 2    jf 12
+~(002) ldb      [23]
+~(003) jeq      #0x11            jt 4    jf 12
+~(004) ldh      [20]
+~(005) jset     #0x1fff          jt 12   jf 6
+~(006) ldxb     4*([14]&0xf)
+~(007) ldh      [x + 14]
+~(008) jeq      #0x35            jt 11   jf 9
+~(009) ldh      [x + 16]
+~(010) jeq      #0x35            jt 11   jf 12
+~(011) ret      #262144
+~(012) ret      #0

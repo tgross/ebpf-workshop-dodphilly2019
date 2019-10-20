@@ -1,0 +1,14 @@
+center vcenter
+
+* ~kprobe~: An instrumentation hook in the kernel that tells us a
+  specific event happened. Ex. ~tracepoint:sched:*~ probes instrument
+  kernel scheduling events like context switches.
+
+* ~uprobe~: An instrumentation hook in native userland code that tells
+  us a specific event happened. Ex. ~tracepoint:syscalls:sys_exit_read~
+  instruments when the ~read~ syscall exits.
+
+* ~usdt~: An instrumentation hook in the runtime of a higher-level
+  language like Python, Ruby, or Java to instrument itself.
+  Ex. ~gc__done~ in the Python runtime reports when garbage collection
+  is done and how many objects were collected.

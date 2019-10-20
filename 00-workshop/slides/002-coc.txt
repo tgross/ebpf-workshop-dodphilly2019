@@ -1,0 +1,18 @@
+center vcenter
+
+% We've updated our privacy policy!
+
+Any reference to or citation of any person or organization does not
+constitute or imply an endorsement or recommendation of the content of
+this workshop. The opinions expressed in this talk are the
+instructor's alone and do not reflect the view of HashiCorp, this
+conference, your employer, or my mom. The instructor is grossly
+unqualified to tell you how to live your life. Your mileage may
+vary. Not to be used in the manufacture of nuclear weapons. No
+Kubernetes were harmed in the creation of this workshop. By attending
+this workshop the instructor hereby grants you an irrevocable,
+perpetual, non-exclusive, transferable, worldwide license to be
+excellent to each other.
+
+
+% Reminder: the Code of Conduct applies in this space

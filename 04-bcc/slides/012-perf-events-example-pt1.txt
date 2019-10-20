@@ -1,0 +1,19 @@
+vcenter center
+
+* ~BPF_PERF_OUTPUT~ is a helper function that creates a BPF table for
+pushing out custom event data to user space via a perf ring buffer. This
+is how we push per-event data to user space.
+
+
+~bpf_source = """
+~#include <uapi/linux/ptrace.h>
+~
+~BPF_PERF_OUTPUT(events);
+~
+~struct data_t {
+~    char comm[16];
+~};
+~"""
+
+Ref:
+https://github.com/iovisor/bcc/blob/master/docs/reference_guide.md

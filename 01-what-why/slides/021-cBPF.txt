@@ -1,0 +1,15 @@
+center vcenter
+
+% BPF
+
+
+* ~The BSD Packet Filter: A New Architecture for User-level Packet~
+  ~Capture~ (Steve McCanne and Van Jacobson 1992)
+
+* Virtual Machine to work efficiently with register based CPUs
+
+* Packet filtering without copying data
+
+* Ex: ~tcpdump~, ~wireshark~
+
+* Today we call this classic BPF or ~cBPF~

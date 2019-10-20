@@ -1,0 +1,14 @@
+center vcenter
+
+% Controversial Opinion: It's Ok to SSH
+
+
+Industry discussion has been focused on "3 pillars of
+observability"
+
+  * logging
+  * metrics
+  * tracing
+
+There are entire categories of problems that can't be
+debugged with these tools.

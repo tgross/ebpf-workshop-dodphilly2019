@@ -1,0 +1,8 @@
+center vcenter
+
+% What You Need:
+
+
+1. ~ssh~ client
+
+2. Sign-in at: ~https://login.machinistlabs.com~

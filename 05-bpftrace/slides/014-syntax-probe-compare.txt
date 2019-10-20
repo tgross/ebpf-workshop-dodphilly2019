@@ -1,0 +1,16 @@
+vcenter center
+
+% Comparison
+
+BCC:
+
+~bpf.attach_kretprobe(event=execve_function,
+~                     fn_name="on_syscall_execve")
+
+bpftrace:
+
+~kr:syscalls:sys_enter_execve
+
+(Or better, we'll see why later...)
+
+~tracepoint:syscalls:sys_enter_execve

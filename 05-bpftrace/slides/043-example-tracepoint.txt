@@ -1,0 +1,19 @@
+vcenter center
+
+% hands on: tracing read bytes using a tracepoint
+
+Looks the same as ~kretprobe~:
+
+~sudo bpftrace -e \
+~    'tracepoint:syscalls:sys_exit_read  \
+~    { @bytes = lhist(args->ret, 0, 2000, 200); }'
+
+
+Why?
+
+* ~kretprobe~ can trace *any* kernel function but isn't "stable" b/c
+  it can trace kernel internals that might change between versions.
+* ~tracepoints~ are considered part of the "user facing" API and the
+  kernel devs say ~"WE DO NOT BREAK USERSPACE!"~ (Swearing optional.)
+
+Use tracepoints whenever you can over kprobe/kretprobe.

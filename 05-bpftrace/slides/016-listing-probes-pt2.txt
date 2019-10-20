@@ -1,0 +1,22 @@
+vcenter center
+
+Filter by name (can use wild cards):
+
+~$ sudo bpftrace -l '*nanosleep*'
+~tracepoint:syscalls:sys_enter_clock_nanosleep
+~tracepoint:syscalls:sys_exit_clock_nanosleep
+~tracepoint:syscalls:sys_enter_nanosleep
+~tracepoint:syscalls:sys_exit_nanosleep
+~kprobe:nanosleep_copyout
+~kprobe:hrtimer_nanosleep
+~kprobe:__ia32_sys_nanosleep
+~...
+
+Add -v for list of arguments:
+
+~$ sudo bpftrace -lv tracepoint:syscalls:sys_enter_open
+~tracepoint:syscalls:sys_enter_open
+~    int __syscall_nr;
+~    const char * filename;
+~    int flags;
+~    umode_t mode;

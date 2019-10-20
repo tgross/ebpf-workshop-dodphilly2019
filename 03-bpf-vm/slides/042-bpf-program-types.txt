@@ -1,0 +1,17 @@
+vcenter center
+
+% BPF program types
+
+Socket filtering:                    XDP:
+    ~BPF_PROG_TYPE_SOCKET_FILTER~          ~BPF_PROG_TYPE_XDP
+    ~BPF_PROG_TYPE_SK_SKB~
+    ~BPF_PROG_TYPE_SK_MSG~             Perf events:
+    ~BPF_PROG_TYPE_SK_REUSEPORT~           ~BPF_PROG_TYPE_PERF_EVENT
+
+Tracing:                             Cgroups:
+    ~BPF_PROG_TYPE_KPROBE~                 ~BPF_PROG_TYPE_CGROUP_SKB
+    ~BPF_PROG_TYPE_TRACEPOINT~             ~BPF_PROG_TYPE_CGROUP_SOCK
+    ~BPF_PROG_TYPE_RAW_TRACEPOINT~         ~BPF_PROG_TYPE_CGROUP_DEVICE
+                                         ~BPF_PROG_TYPE_CGROUP_SOCK_ADDR
+
+(We'll cover more of these tomorrow!)

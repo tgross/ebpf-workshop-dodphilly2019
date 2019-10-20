@@ -1,0 +1,20 @@
+center vcenter
+
+% ssh
+
+
+Open two terminal windows (or tmux panes, etc.):
+
+    ~ssh -i \~/.ssh/<my key> ubuntu@54.xx.yy.zz
+
+
+(Alternate) Add to ~ssh~ config:
+
+    ~Host workshop
+      ~Hostname 54.xx.yy.zz
+      ~User ubuntu
+      ~IdentityFile \~/.ssh/my_key
+
+Then:
+
+    ~ssh workshop~

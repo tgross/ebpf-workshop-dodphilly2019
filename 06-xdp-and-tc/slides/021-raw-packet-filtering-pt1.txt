@@ -1,0 +1,13 @@
+vcenter center
+
+% Raw packets filtering
+
+
+* Attach a BPF program to a socket
+
+* Each packet received on the socket is passed to the BPF program as a
+  ~sk_buff~ ("socket buffer") struct w/ metadata about the packet
+  (ex. ~protocol~, ~transport_header~, or ~data_len~).
+
+Ref:
+~https://github.com/torvalds/linux/blob/master/include/linux/skbuff.h#L607-L683~

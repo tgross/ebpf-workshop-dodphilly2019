@@ -1,0 +1,21 @@
+vcenter center
+
+Callbacks we use in BCC can be arbitrary Python code!
+
+~from prometheus_client import Histogram, start_http_server
+~
+~def report_event(cpu, data, size):
+~    event = ct.cast(data, ct.POINTER(GCEvent)).contents
+~    elapsed = event.elapsed_ns / 1000000 if args.milliseconds else \
+~              event.elapsed_ns / 1000
+~    description = probes[event.probe_index].format(event)
+~    if args.filter and args.filter not in description:
+~        return
+~
+~    # Prometheus stats reporting
+~    h = Histogram(description, description)
+~    h.observe(elapsed)
+~
+~
+~start_http_server(9001)
+~bpf["gcs"].open_perf_buffer(report_event)

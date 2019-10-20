@@ -1,0 +1,27 @@
+vcenter center
+
+Existing reporting in ~ugc~:
+
+~class GCEvent(ct.Structure):
+~    _fields_ = [
+~        ("probe_index", ct.c_ulonglong),
+~        ("elapsed_ns", ct.c_ulonglong),
+~        ("field1", ct.c_ulonglong),
+~        ("field2", ct.c_ulonglong),
+~        ("field3", ct.c_ulonglong),
+~        ("field4", ct.c_ulonglong),
+~        ("string1", ct.c_char * 32),
+~        ("string2", ct.c_char * 32)
+~        ]
+~
+~start_ts = time.time()
+~
+~def print_event(cpu, data, size):
+~    event = ct.cast(data, ct.POINTER(GCEvent)).contents
+~    elapsed = event.elapsed_ns / 1000000 if args.milliseconds else \
+~              event.elapsed_ns / 1000
+~    description = probes[event.probe_index].format(event)
+~    if args.filter and args.filter not in description:
+~        return
+~    print("%-8.3f %-8.2f %s" % (time.time() - start_ts, elapsed, description))
+~

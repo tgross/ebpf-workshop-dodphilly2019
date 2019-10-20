@@ -1,0 +1,16 @@
+vcenter center
+
+Trace the userland function:
+
+
+~sudo bpftrace -e '
+~    uprobe:/usr/local/bin/nomad:*collectMemoryStats
+~    {
+~      @start[tid] = nsecs;
+~    }
+~    uretprobe:/usr/local/bin/nomad:*collectMemoryStats
+~    {
+~      $latns = (nsecs - @start[tid]);
+~      printf("%6d ns\n", $latns);
+~      delete(@start[tid]);
+~    }'

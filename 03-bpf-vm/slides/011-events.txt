@@ -1,0 +1,16 @@
+vcenter center
+
+% BPF is Event-Driven
+
+Examples:
+
+* Network device w/ BPF program attached (~tc~ or ~xdp~) fires an event that
+  triggers execution on each packet received.
+
+* Kernel address w/ kprobe and BPF program attached (ex. ~bpftrace~) will
+  trap when the code at that address is executed, which fires an event to
+  invoke the kprobe's callback function and triggers execution of the BPF
+  program.
+
+* Runtime w/ ~udst~ and BPF program attached (ex. ~pythonflows-bfpcc~) fires
+  the callback each time the tracepoint is hit.

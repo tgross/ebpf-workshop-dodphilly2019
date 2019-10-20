@@ -1,0 +1,18 @@
+vcenter center
+
+~$ tc -s qdisc show dev ens5
+~qdisc mq 0: root
+~ Sent 1360140419 bytes 12576035 pkt (dropped 0, overlimits 0 requeues 68)
+~ backlog 0b 0p requeues 68
+~qdisc fq_codel 0: parent :2 limit 10240p flows 1024 quantum 1514 target 5.0ms \
+~     interval 100.0ms memory_limit 32Mb ecn
+~ Sent 717647774 bytes 6400616 pkt (dropped 0, overlimits 0 requeues 32)
+~ backlog 0b 0p requeues 32
+~  maxpacket 2912 drop_overlimit 0 new_flow_count 34794 ecn_mark 0
+~  new_flows_len 0 old_flows_len 0
+~qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5.0ms \
+~      interval 100.0ms memory_limit 32Mb ecn
+~ Sent 642492645 bytes 6175419 pkt (dropped 0, overlimits 0 requeues 36)
+~ backlog 0b 0p requeues 36
+~  maxpacket 2912 drop_overlimit 0 new_flow_count 34902 ecn_mark 0
+~  new_flows_len 0 old_flows_len 0

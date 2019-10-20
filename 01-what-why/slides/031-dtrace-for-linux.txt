@@ -1,0 +1,14 @@
+center vcenter
+
+% eBPF: "DTrace for Linux"
+
+
+* User-defined, sandboxed, bytecode executed in the kernel.
+
+* Dynamically instrument kernel functions (~kprobes~), userland native
+  functions (~uprobes~), hardware events, and CPU profiles.
+
+* Statically instrument arbitrary applications w/ User
+  Statically-Defined Tracepoints (~usdt~). Runtimes like Python, Ruby,
+  and Java can be compiled to include ~usdt~ to instrument their own
+  functions.

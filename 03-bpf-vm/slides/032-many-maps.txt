@@ -1,0 +1,21 @@
+vcenter center
+
+% Many different types of maps
+
+
+~BPF_MAP_TYPE_HASH~               hash map
+~BPF_MAP_TYPE_ARRAY~              array
+~BPF_MAP_TYPE_PROG_ARRAY~         refs to other BPF programs!
+~BPF_MAP_TYPE_PERF_EVENT_ARRAY~   perf events array maps
+~BPF_MAP_TYPE_PERCPU_HASH~        per-CPU hash map
+~BPF_MAP_TYPE_PERCPU_ARRAY~       per-CPU array maps
+~BPF_MAP_TYPE_STACK_TRACE~        stack trace maps
+~BPF_MAP_TYPE_CGROUP_ARRAY~       cgroup array maps
+~BPF_MAP_TYPE_LRU_HASH~           hash map w/ LRU cache
+~BPF_MAP_TYPE_LRU_PERCPU_HASH~    per-CPU hash map w/ LRU cache
+~BPF_MAP_TYPE_LPM_TRIE~           Longest Prefix Match(LPM) Trie
+~BPF_MAP_TYPE_HASH_OF_MAPS~       hash of hash maps
+~BPF_MAP_TYPE_ARRAY_OF_MAPS~      array of hash maps
+
+
+(See also ~man 2 bpf~)

@@ -1,0 +1,16 @@
+vcenter center
+
+% hands on: tracing read bytes using a kretprobe
+
+In Linux, all files are accessed through the Virtual Filesystem Switch,
+or VFS, a layer of code which implements generic filesystem actions and
+vectors requests to the correct specific code to handle the request.
+
+* Instrument ~vfs_read~ function in the kernel using a ~kretprobe~.
+
+* Create an array called ~bytes~ that will dump a linear histogram
+  where the arguments are: ~value~, ~min~, ~max~, ~step~. The first argument
+  (~retval~) of ~vfs_read()~ is the return value: the number of bytes read;
+
+Ref:
+https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md

@@ -1,0 +1,12 @@
+vcenter center
+
+$ Traffic control actions
+
+
+Traffic control program process packets and performs "action":
+
+    ~#define TC_ACT_UNSPEC     (-1)~ // unspecified; drop thru to next program
+    ~#define TC_ACT_OK           0~  // allow the packet
+    ~#define TC_ACT_SHOT         2~  // drop the packet
+    ~#define TC_ACT_STOLEN       4~  // drops but lies about it
+    ~#define TC_ACT_REDIRECT     7~  // redirect to another iface

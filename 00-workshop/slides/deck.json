@@ -1,0 +1,12 @@
+{
+  "header": {
+    "centre": "An Introduction to Production Debugging with eBPF"
+  },
+  "footer": {
+    "left": "Tim Gross",
+    "right": "@0x74696d"
+  },
+  "fade": {
+    "delay": 5
+  }
+}

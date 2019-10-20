@@ -1,0 +1,16 @@
+center vcenter
+
+% Why This Matters in Production
+
+
+Using ~strace~:
+
+    ~PID=$(pgrep nginx)
+    ~sudo strace -c -p $PID -e trace=read
+
+
+Using ~bpftrace~:
+
+    ~sudo bpftrace -e "tracepoint:syscalls:sys_exit_read
+        ~/pid == $PID/~
+        ~{ @bytes = hist(args->ret); }"~

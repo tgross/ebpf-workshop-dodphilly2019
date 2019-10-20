@@ -1,0 +1,24 @@
+vcenter center
+
+Now we're back in Python:
+
+* ~attach_kretprobe()~ instruments the kernel function ~event~ using
+kernel dynamic tracing of the function exit (there's ~attached_kprobe~
+for entry, too!), and attaches our C function ~fn_name~ to be called
+when the kernel function is called.
+
+* ~open_perf_buffer()~ associates a Python callback to be called each
+time data is available in the perf ring buffer that we set up with our
+~BPF_PERF_OUTPUT~ table.
+
+
+~from bcc import BPF
+~from bcc.utils import printb
+~
+~bpf = BPF(text = bpf_source)
+~execve_function = bpf.get_syscall_fnname("execve")
+~bpf.attach_kretprobe(event=execve_function, fn_name="on_syscall_execve")
+~
+~bpf["events"].open_perf_buffer(dump_data)
+~while 1:
+~    bpf.perf_buffer_poll()

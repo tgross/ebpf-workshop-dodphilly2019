@@ -1,0 +1,7 @@
+center vcenter
+
+~$ sudo tcpretrans-bpfcc
+~Tracing retransmits ... Hit Ctrl-C to end
+~TIME     PID    IP LADDR:LPORT          T> RADDR:RPORT          STATE
+~23:55:29 0      4  10.0.2.15:60878      R> 104.31.91.70:1111    SYN_SENT
+~23:55:31 0      4  10.0.2.15:60878      R> 104.31.91.70:1111    SYN_SENT

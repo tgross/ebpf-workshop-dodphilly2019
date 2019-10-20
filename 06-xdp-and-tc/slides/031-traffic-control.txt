@@ -1,0 +1,15 @@
+vcenter center
+
+% Traffic Control (tc)
+
+
+* Traffic Control is the kernel packet scheduling subsystem, consisting
+  of queueing disciplines around packet flows.
+
+* ~tc~ is a command line tool for manipulating traffic control
+  configuration (ref ~man tc 8~).
+
+* We can load BPF programs as "classifiers" (~cls_bpf~) to filter and
+  take action on packets at both ingress/egress (ref ~man tc-bpf 8~).
+
+* BPF program receives the ~sk_buff~ struct with metadata we saw before.

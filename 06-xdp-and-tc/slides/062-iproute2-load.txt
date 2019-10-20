@@ -1,0 +1,15 @@
+vcenter center
+
+% XDP loading via iproute2
+
+
+~sudo ip link set \
+~    dev docker0 \           # the device name
+~    xdp \                   # default (alt: xdpdrv or xdpoffload)
+~    obj hello_xdp_drop.o \  # the name of the object file
+~    sec .text               # default section name
+
+
+Can only be one XDP program attached to an interface, use ~--force~ flag to
+replace the existing one. Most XDP-enabled drivers support atomic replacement
+without interrupting traffic!

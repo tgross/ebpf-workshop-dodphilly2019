@@ -1,0 +1,17 @@
+vcenter center
+
+% Variable types
+
+Basic Variables:
+
+* ~@global~
+* ~@thread_local[tid]~
+* ~$scratch~
+
+Associative Arrays:
+
+* ~@array[key] = value~
+
+Builtins:
+
+* ~pid

@@ -1,0 +1,13 @@
+vcenter center
+
+% Tcpdump
+
+
+* A front end for ~libpcap~
+
+* Define high-level filtering expression that gets compiled to a BPF
+  filter expression
+
+* Output to filter to pcap files for later inspection (~-w~)
+
+* Read from a pcap file to do more filtering

@@ -1,0 +1,12 @@
+center vcenter
+
+% eBPF with Containers
+
+
+* Like all debugging tools, requires a high level of privilege.
+  Not just ~root~ but ~ptrace~ and ~CAP_SYSADMIN~.
+
+* Sidecar container with eBPF and other debugging tools can enter the
+  target container's ~pid~ namespace.
+
+* Some cool ~k8s~ stuff landed in ~bpftrace~ recently too.

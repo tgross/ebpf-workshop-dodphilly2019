@@ -1,0 +1,16 @@
+center vcenter
+
+% Day One:
+
+
+1. What's eBPF? Why eBPF?
+
+2. Intro to eBPF tools (~bcc-tools~)
+
+3. Dive into eBPF concepts and the BPF VM
+
+4. Exercise: custom BPF program loaders
+
+5. Exercise: building custom reporting on top of ~bcc-tools~
+
+6. Exercise: quick debugging with ~bpftrace~

@@ -1,0 +1,15 @@
+vcenter center
+
+
+% XDP vs Traffic Control
+
+
+* XDP is run earlier in the ingress path, even offloaded to the
+ network hardware!
+
+* XDP is ingress only.
+
+* XDP only has access to ~xdp_buff~, not the much richer ~sk_buff~.
+
+* XDP is super fast! But uses a bit more memory because it allocs
+  extra space in the packet.

@@ -1,0 +1,11 @@
+vcenter center
+
+% Example: XDP program to drop all TCP packets
+
+
+~#include <linux/bpf.h>
+~
+~int main()
+~{
+~    return XDP_DROP;
+~}
