@@ -6,6 +6,7 @@
 
 This workshop has been designed around a deployment on AWS. Within a few weeks after the workshop, I hope to have a Vagrantfile in this repo which gets as close as possible to the working environment we had.
 
+To run the slides, use my fork of Josh Clulow's [`vtmc`](https://github.com/jclulow/vtmc), found at https://github.com/tgross/vtmc
 
 ## Credits and Reference Material
 
@@ -23,11 +24,11 @@ David Calavera and Lorenzo Fontana's have a workshop at [workshop.bpf.sh](https:
 
 * [How to turn any syscall into an event: Introducing eBPF Kernel probes](https://blog.yadutaf.fr/2016/03/30/turn-any-syscall-into-event-introducing-ebpf-kernel-probes/) by Jean-Tiare Le Bigot
 
-[The art of writing eBPF programs: a primer.](https://sysdig.com/blog/the-art-of-writing-ebpf-programs-a-primer/) by Gianluca Borello at Sysdig.
+* [The art of writing eBPF programs: a primer.](https://sysdig.com/blog/the-art-of-writing-ebpf-programs-a-primer/) by Gianluca Borello at Sysdig.
 
 * [Load XDP programs using the ip (iproute2) command](https://fntlnz.wtf/post/xdp-ip-iproute/) by Lorenzo Fontana
 
-[Why is the kernel community replacing iptables with BPF?](https://cilium.io/blog/2018/04/17/why-is-the-kernel-community-replacing-iptables/) by Thomas Graf of Cilium
+* [Why is the kernel community replacing iptables with BPF?](https://cilium.io/blog/2018/04/17/why-is-the-kernel-community-replacing-iptables/) by Thomas Graf of Cilium
 
 * [Instrumenting CPython with DTrace and SystemTap](https://docs.python.org/3/howto/instrumentation.htm) by David Malcolm and Łukasz Langa
 
